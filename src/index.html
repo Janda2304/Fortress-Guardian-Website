@@ -10,28 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
     <link rel="stylesheet" href="style.css">
-    <title>Fortress Guardian - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Fortress Guardian | Home</title>
 </head>
+
 <body>
 
-<header>
-    <section class="header-nav">
-        <a href="index.html" class="page-logo">
-            <img src="img/frist-logo.png" alt="Frist Studios logo" class="page-logo">
-        </a>
+<header class="header-nav">
 
+    <a href="index.html" class="page-logo">
+        <img src="../img/frist-logo.png" alt="Frist Studios logo" class="page-logo">
+    </a>
         <nav class="nav-links">
+
             <a href="about-game.html">The Game</a>
             <a href="wiki-homepage.html">Wiki</a>
-            <a href="about.html">About Us</a>
-            <button class="play-button">Play Now</button>
+            <a href="about-frist.html">About Us</a>
         </nav>
-    </section>
+    <button class="play-button" onclick="console.log('Pan Cajthaml rikal, ze toto nemame pouzivat, alespon myslim')">Play Now</button>
+
+    <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+    </div>
 </header>
+
+<section class="trailer-container">
+</section>
 
 </body>
 </html>
 
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>
 
 
-<!-- Zdroje: byl použit github copilot -->
+
+<!-- Zdroje: V celém projektu byl použit github copilot -->

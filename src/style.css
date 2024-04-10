@@ -1,0 +1,176 @@
+
+/*
+color palette:
+
+lawn green: #95e836
+snow: #fff7f9
+black: #000300
+steel blue: #3581b8
+hunyadi yellow: #f4ac45
+*/
+
+
+
+
+body
+{
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: Roboto, serif;
+    background-image: url("../img/homepage-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-nav
+{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    gap: 20%;
+    background-color: rgba(244, 172, 69, 0.75);
+    align-items: center;
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 13%;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+
+}
+
+.nav-links a
+{
+    display: flex;
+    text-decoration: none;
+    text-wrap: none;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    color: rgba(52, 136, 196, 0.9);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header-nav .nav-links a:hover
+{
+    color: rgb(38, 152, 231);;
+}
+
+.page-logo
+{
+    padding-left: 2%;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.play-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 50%;
+    background-color: rgba(149, 232, 54, 1);
+    border: 0.2vw solid snow;
+    border-radius: 0.25vw;
+    font-family: Roboto, serif;
+    font-size: 1.4rem;
+}
+
+
+.play-button:hover
+{
+    background-color: #74b528;
+    cursor: pointer;
+}
+
+.page-logo:hover
+{
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 3rem;
+}
+
+
+@media screen  and (max-width: 768px)
+{
+   .play-button
+   {
+       font-size: 1.1rem;
+   }
+
+    .header-nav .nav-links
+    {
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+  .nav-links a
+  {
+       font-size: 1.2rem;
+  }
+
+    .play-button
+    {
+        font-size: 0.8rem;
+        margin-right: 2vw;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .header-nav .nav-links
+    {
+        gap: 1%;
+    }
+
+    .play-button
+    {
+        font-size: 0.75rem;
+    }
+
+    .menu-toggle
+    {
+        display: block;
+    }
+
+    .nav-links
+    {
+        display: none;
+        background-color: #5b5a5a;
+        width: 0;
+        padding: 10px;
+    }
+
+    .nav-links a
+    {
+        display: none;
+        margin: 5px 0; /* Adjust spacing between links */
+    }
+
+    .nav-links.show
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
