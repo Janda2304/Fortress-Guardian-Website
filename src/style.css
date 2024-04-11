@@ -3,10 +3,12 @@
 color palette:
 
 lawn green: #95e836
-snow: #fff7f9
 black: #000300
-steel blue: #3581b8
-hunyadi yellow: #f4ac45
+snow: #fff7f9
+coyote: #84714F
+rose ebony: #5A3A31
+bistre: #31231E
+african violet: #AB92BF
 */
 
 
@@ -18,7 +20,7 @@ body
     flex-direction: column;
     justify-content: space-between;
     color: white;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 200vh;
     font-family: Roboto, serif;
     background-image: url("../img/homepage-background.png");
@@ -29,20 +31,20 @@ body
 .header-nav
 {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
-    gap: 20%;
-    background-color: rgba(244, 172, 69, 0.75);
+    gap: 10%;
+    background-color: #31231e;
     align-items: center;
 }
 
 .nav-links
 {
     display: flex;
-    gap: 13%;
+    gap: 8%;
     flex-direction: row;
     align-items: center;
-    width: 30%;
+    width: 50%;
     height: 100%;
 
 }
@@ -51,19 +53,23 @@ body
 {
     display: flex;
     text-decoration: none;
+    width: 20%;
+    height: 4vh;
     text-wrap: none;
-    width: 10vw;
     align-items: center;
     justify-content: center;
     color: rgba(52, 136, 196, 0.9);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
-.header-nav .nav-links a:hover
+.nav-links a:hover
 {
-    color: rgb(38, 152, 231);;
+    color: rgb(38, 152, 231);
+    background-color: rgba(255, 247, 249, 0.25);
+    border-radius: 5px;
 }
+
 
 .page-logo
 {
@@ -76,7 +82,7 @@ body
 }
 
 
-.play-button
+.button
 {
     display: flex;
     justify-content: center;
@@ -90,14 +96,21 @@ body
     font-size: 1.4rem;
 }
 
+.button:hover
+{
+    background-color: #74b528;
+    border: 0.2vw solid #e5e0e0;
+    cursor: pointer;
+}
+
 .footer-container
 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
-    background-color: rgba(244, 172, 69, 0.75);
+    background-color: #31231e;
 }
 
 
@@ -108,6 +121,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     width: 10vw;
     height: 100%;
@@ -117,27 +131,27 @@ body
 
 .footer-links
 {
-    color: white;
     display: flex;
-    flex-direction: column;
+    color: white;
     align-items: center;
+    flex-direction: column;
     gap: 5%;
-    margin-top: 25%;
-    background-color: green;
     width: 10vw;
-    height: 100%;
+    height: 90%;
 }
 
 .footer-links a
 {
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 6%;
+    width: 70%;
+    height: 10%;
     text-align: center;
-    color: white;
+    font-size: 1.25rem;
     text-decoration: none;
+    text-wrap: none;
     border-radius: 5px;
 }
 
@@ -145,16 +159,6 @@ body
 {
     color: rgb(38, 152, 231);
     background-color: rgba(0, 3, 0, 0.3);
-}
-
-
-
-
-
-.play-button:hover
-{
-    background-color: #74b528;
-    cursor: pointer;
 }
 
 .page-logo:hover
