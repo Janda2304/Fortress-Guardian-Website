@@ -1,32 +1,16 @@
 
-/*
-color palette:
-
-lawn green: #95e836
-black: #000300
-snow: #fff7f9
-coyote: #84714F
-rose ebony: #5A3A31
-bistre: #31231E
-african violet: #AB92BF
-*/
-
-
-
-
-body
+:root
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    min-width: 100%;
-    min-height: 200vh;
-    font-family: Roboto, serif;
-    background-image: url("../img/homepage-background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    --lawn-green: #95e836;
+    --black: #000300;
+    --snow: #fff7f9;
+    --coyote: #84714F;
+    --rose-ebony: #5A3A31;
+    --bistre: #31231E;
+    --african-violet: #AB92BF;
 }
+
+
 
 .header-nav
 {
@@ -34,41 +18,42 @@ body
     position: fixed;
     width: 100%;
     height: 10vh;
-    gap: 10%;
+    gap: 3%;
     background-color: #31231e;
     align-items: center;
+    z-index: 100;
 }
 
 .nav-links
 {
     display: flex;
-    gap: 8%;
+    gap: 1%;
     flex-direction: row;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 100%;
-
 }
 
 .nav-links a
 {
     display: flex;
     text-decoration: none;
-    width: 20%;
+    width: auto;
     height: 4vh;
-    text-wrap: none;
     align-items: center;
     justify-content: center;
     color: rgba(171, 146, 191, 0.9);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    border-radius: 0.5vw;
+    padding: 0 1.5rem;
 }
 
 .nav-links a:hover
 {
     color: rgb(205, 179, 229);
-    background-color: rgba(0, 3, 0, 0.3);
-    border-radius: 5px;
+    background-color: rgba(255, 247, 249, 0.15);
+
 }
 
 
@@ -85,6 +70,8 @@ body
 
 .button
 {
+    margin-left: auto;
+    margin-right: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,9 +79,11 @@ body
     height: 50%;
     background-color: rgba(149, 232, 54, 1);
     border: 0.2vw solid snow;
-    border-radius: 0.25vw;
+    border-radius: 0.5vw;
     font-family: Roboto, serif;
     font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
+    float: right;
 }
 
 .button:hover
@@ -102,6 +91,7 @@ body
     background-color: #74b528;
     border: 0.2vw solid #e5e0e0;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .footer-container
@@ -111,6 +101,7 @@ body
     align-items: center;
     width: 100%;
     height: 50vh;
+    margin-top: 50vh;
     background-color: #31231e;
 }
 
@@ -126,7 +117,7 @@ body
     text-decoration: none;
     width: 10vw;
     height: 100%;
-   /* background-color: aqua;*/
+    /* background-color: aqua;*/
     gap: 5%;
 }
 
@@ -149,7 +140,8 @@ body
     color: white;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: auto;
+    padding: 0.15rem 1rem;
     height: 10%;
     text-align: center;
     font-size: 1.25rem;
@@ -161,7 +153,8 @@ body
 .footer-links a:hover
 {
     color: rgb(171, 146, 191);
-    background-color: rgba(0, 3, 0, 0.3);
+    background-color: rgba(255, 247, 249, 0.15);
+
 }
 
 .footer-socials
@@ -176,6 +169,7 @@ body
     gap: 1%;
     width: 80%;
     height: 40%;
+    transition: all 0.2s ease-in-out;
 }
 
 .footer-socials a
@@ -183,85 +177,14 @@ body
     color: #fff7f9;
 }
 
+.footer-socials a:hover
+{
+    color: #ab92bf;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .page-logo:hover
 {
     cursor: pointer;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-.menu-toggle i {
-    font-size: 3rem;
-}
-
-
-@media screen  and (max-width: 768px)
-{
-   .play-button
-   {
-       font-size: 1.1rem;
-   }
-
-    .header-nav .nav-links
-    {
-        gap: 5%;
-    }
-
-    .menu-toggle
-    {
-        display: block;
-    }
-
-    .nav-links
-    {
-        display: none;
-        background-color: #5b5a5a;
-        width: 0;
-        padding: 10px;
-    }
-
-    .nav-links a
-    {
-        display: none;
-        margin: 5px 0;
-    }
-
-    .nav-links.show
-    {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 576px)
-{
-  .nav-links a
-  {
-       font-size: 1.2rem;
-  }
-
-    .play-button
-    {
-        font-size: 0.8rem;
-        margin-right: 2vw;
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 480px)
-{
-    .header-nav .nav-links
-    {
-        gap: 1%;
-    }
-
-    .play-button
-    {
-        font-size: 0.75rem;
-    }
-
-
 }

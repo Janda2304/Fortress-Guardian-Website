@@ -1,0 +1,25 @@
+/*
+color palette:
+
+lawn green: #95e836
+black: #000300
+snow: #fff7f9
+coyote: #84714F
+rose ebony: #5A3A31
+bistre: #31231E
+african violet: #AB92BF
+*/
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    min-width: 100%;
+    min-height: 200vh;
+    font-family: Roboto, serif;
+    background-image: url("../img/homepage-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
