@@ -26,14 +26,57 @@ body
     background-image: url("../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    gap: 1vh;
 }
 
 .trailer-container
 {
     display: flex;
-    width: 50vw;
-    height: 50vh;
-    background-color: snow;
-    border-radius: 1vw;
+    width: 65%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 0.5vw;
+    margin-top: 7.5%;
 }
 
+.game-info-container
+{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 10vh;
+}
+
+.game-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 60%;
+    background-color: rgba(149, 232, 54, 1);
+    border: 0.2vw solid snow;
+    border-radius: 0.5vw;
+    font-family: Roboto, serif;
+    font-size: 1.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.game-button:hover
+{
+    background-color: #74b528;
+    border: 0.2vw solid #e5e0e0;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+video
+{
+    width: 100%;
+    border-radius: 0.5vw;
+    height: 100%;
+}
