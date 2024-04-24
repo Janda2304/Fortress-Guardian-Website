@@ -6,7 +6,7 @@ body
     color: white;
     min-width: 100%;
     min-height: 100vh;
-    font-family: Roboto, serif;
+    font-family: Vinque, Roboto, serif;
     background-image: url("../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body
 {
     display: flex;
     font-size: 1.5rem;
-    background-color: rgba(255, 247, 249, 0.5);
+    background-color: var(--snow-50);
     padding: 0.25vw;
     border-radius: 0.25vw;
     position: relative;
@@ -42,7 +42,7 @@ body
 .news-labels-container h2
 {
     font-size: 1.5rem;
-    background-color: rgba(255, 247, 249, 0.5);
+    background-color: var(--snow-70);
     padding: 0.25vw;
     border-radius: 0.25vw;
     font-weight: 600;
@@ -52,7 +52,7 @@ body
 {
     display: flex;
     font-size: 1rem;
-    background-color: rgba(255, 247, 249, 0.5);
+    background-color: var(--snow-70);
     padding: 0.25vw;
     border-radius: 0.25vw;
     font-weight: 600;
@@ -67,7 +67,6 @@ body
     width: 100%;
     height: 100%;
     gap: 2.5%;
-    /*background-color: rgba(255, 247, 249, 0.5);*/
     border-radius: 1vw;
     position: relative;
     margin-bottom: 1%;
@@ -77,7 +76,7 @@ body
 {
     display: flex;
     font-size: 1rem;
-    background-color: rgba(255, 247, 249, 0.5);
+    background-color: var(--snow-70);
     padding: 0.25vw;
     border-radius: 0.25vw;
     font-weight: 600;
@@ -106,17 +105,16 @@ body
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: var(--snow);
     border-radius: 1vw;
     box-shadow: black 0 0 1vw;
-    color: black;
+    color: var(--black);
     position: relative;
 }
 
 .news-item:hover
 {
     cursor: pointer;
-    border: 0.25vw solid var(--african-violet);
+    border: 0.25vw solid var(--secondary-color-100);
 }
 
 .news-image
@@ -130,16 +128,16 @@ body
 
 .text-container
 {
-    background-color: rgba(255, 247, 249, 0.25);
+    background-color: var(--snow-20);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 40%;
+    width: 80%;
     height: 100%;
     border-radius: 1vw;
-    margin-top: 6%;
+    margin-top: 2.5%;
 }
 
 .news-title
@@ -147,14 +145,15 @@ body
     display: flex;
     font-size: 5rem;
     font-weight: bold;
-    color: var(--coyote);
+    color: var(--quaternary-color-100);
+
 }
 
 .news-text
 {
     display: flex;
     font-size: 2rem;
-    color: var(--african-violet);
+    color: var(--secondary-color-100);
     margin-top: 2.5%;
 }
 

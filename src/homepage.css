@@ -22,7 +22,7 @@ body
     color: white;
     min-width: 100%;
     min-height: 100vh;
-    font-family: Roboto, serif;
+    font-family: Vinque, Roboto, serif;
     background-image: url("../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,7 +63,6 @@ body
     background-color: rgba(149, 232, 54, 1);
     border: 0.2vw solid snow;
     border-radius: 0.5vw;
-    font-family: Roboto, serif;
     font-size: 1.5rem;
     transition: all 0.2s ease-in-out;
 }

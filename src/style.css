@@ -1,9 +1,80 @@
 
 :root
 {
-    --lawn-green: #95e836;
+    --primary-color-100: rgba(60, 60, 60, 1);
+    --primary-color-90: rgba(60, 60, 60, 0.9);
+    --primary-color-80: rgba(60, 60, 60, 0.8);
+    --primary-color-70: rgba(60, 60, 60, 0.7);
+    --primary-color-60: rgba(60, 60, 60, 0.6);
+    --primary-color-50: rgba(60, 60, 60, 0.5);
+    --primary-color-40: rgba(60, 60, 60, 0.4);
+    --primary-color-30: rgba(60, 60, 60, 0.3);
+    --primary-color-20: rgba(60, 60, 60, 0.2);
+    --primary-color-10: rgba(60, 60, 60, 0.1);
+    --primary-color-5: rgba(60, 60, 60, 0.05);
+
+    --secondary-color-100: #087e8b;
+    --secondary-color-90: rgba(8, 126, 139, 0.9);
+    --secondary-color-80: rgba(8, 126, 139, 0.8);
+    --secondary-color-70: rgba(8, 126, 139, 0.7);
+    --secondary-color-60: rgba(8, 126, 139, 0.6);
+    --secondary-color-50: rgba(8, 126, 139, 0.5);
+    --secondary-color-40: rgba(8, 126, 139, 0.4);
+    --secondary-color-30: rgba(8, 126, 139, 0.3);
+    --secondary-color-20: rgba(8, 126, 139, 0.2);
+    --secondary-color-10: rgba(8, 126, 139, 0.1);
+    --secondary-color-5: rgba(8, 126, 139, 0.05);
+
+    --tertiary-color-100: #6C6C6C;
+    --tertiary-color-90: rgba(108, 108, 108, 0.9);
+    --tertiary-color-80: rgba(108, 108, 108, 0.8);
+    --tertiary-color-70: rgba(108, 108, 108, 0.7);
+    --tertiary-color-60: rgba(108, 108, 108, 0.6);
+    --tertiary-color-50: rgba(108, 108, 108, 0.5);
+    --tertiary-color-40: rgba(108, 108, 108, 0.4);
+    --tertiary-color-30: rgba(108, 108, 108, 0.3);
+    --tertiary-color-20: rgba(108, 108, 108, 0.2);
+    --tertiary-color-10: rgba(108, 108, 108, 0.1);
+    --tertiary-color-5: rgba(108, 108, 108, 0.05);
+
+    --quaternary-color-100: #ff5a5f;
+    --quaternary-color-90: rgba(255, 90, 95, 0.9);
+    --quaternary-color-80: rgba(255, 90, 95, 0.8);
+    --quaternary-color-70: rgba(255, 90, 95, 0.7);
+    --quaternary-color-60: rgba(255, 90, 95, 0.6);
+    --quaternary-color-50: rgba(255, 90, 95, 0.5);
+    --quaternary-color-40: rgba(255, 90, 95, 0.4);
+    --quaternary-color-30: rgba(255, 90, 95, 0.3);
+    --quaternary-color-20: rgba(255, 90, 95, 0.2);
+    --quaternary-color-10: rgba(255, 90, 95, 0.1);
+    --quaternary-color-5: rgba(255, 90, 95, 0.05);
+
+    --text-color: #c1839f;
+    --secondary-text-color: #ab92bf;
+
     --black: #000300;
-    --snow: #fff7f9;
+
+
+    --snow-100: #fff7f9;
+    --snow-90: rgba(255, 247, 249, 0.9);
+    --snow-80: rgba(255, 247, 249, 0.8);
+    --snow-70: rgba(255, 247, 249, 0.7);
+    --snow-60: rgba(255, 247, 249, 0.6);
+    --snow-50: rgba(255, 247, 249, 0.5);
+    --snow-40: rgba(255, 247, 249, 0.4);
+    --snow-30: rgba(255, 247, 249, 0.3);
+    --snow-20: rgba(255, 247, 249, 0.2);
+    --snow-10: rgba(255, 247, 249, 0.1);
+    --snow-5: rgba(255, 247, 249, 0.05);
+
+
+    --button-color: #617833;
+    --button-hover-color: #74b528;
+
+
+
+    --lawn-green: #95e836;
+
     --coyote: #84714F;
     --rose-ebony: #5A3A31;
     --bistre: #31231E;
@@ -16,7 +87,6 @@
 768px for tablets.
 992px for laptops.
 1200px for large devices.
-smaller if needed
  */
 
 
@@ -29,7 +99,7 @@ smaller if needed
     width: 100%;
     height: 10vh;
     gap: 3%;
-    background-color: #31231e;
+    background-color: var(--primary-color-100);
     align-items: center;
     z-index: 100;
 }
@@ -62,7 +132,7 @@ smaller if needed
     height: 4vh;
     align-items: center;
     justify-content: center;
-    color: rgba(171, 146, 191, 0.9);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 500;
     border-radius: 0.5vw;
@@ -71,9 +141,8 @@ smaller if needed
 
 .navigation a:hover
 {
-    color: rgb(205, 179, 229);
-    background-color: rgba(255, 247, 249, 0.15);
-
+    color: var(--secondary-text-color);
+    background-color: var(--snow-10);
 }
 
 
@@ -111,22 +180,22 @@ smaller if needed
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(149, 232, 54, 1);
-    border: 0.2vw solid snow;
+    background-color: var(--button-color);
+    border: 0.2vw solid var(--snow-100);
     width: 12vw;
     height: 5vh;
+    font-family: Vinque, Roboto, serif;
     border-radius: 0.5vw;
-    font-family: Roboto, serif;
     font-size: 1.4rem;
     transition: all 0.2s ease-in-out;
 }
 
 .play-button-container .button:hover
 {
-    background-color: #74b528;
-    border: 0.2vw solid #e5e0e0;
+    background-color: var(--button-hover-color);
+    border: 0.2vw solid var(--snow-100);
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.025);
 }
 
 
@@ -139,7 +208,7 @@ smaller if needed
     align-items: center;
     width: 100%;
     height: 50vh;
-    background-color: #31231e;
+    background-color: var(--primary-color-100);
 }
 
 .footer-links-container
@@ -151,27 +220,25 @@ smaller if needed
     text-decoration: none;
     width: 10vw;
     height: 100%;
-    /* background-color: aqua;*/
     gap: 5%;
 }
 
 .footer-links
 {
     display: flex;
-    color: white;
+    color: var(--snow-100);
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2.5%;
     width: 10vw;
     height: 90%;
-    /*background-color: red;*/
 }
 
 .footer-links a
 {
     display: flex;
-    color: white;
+    color: var(--snow-100);
     justify-content: center;
     align-items: center;
     width: auto;
@@ -187,7 +254,7 @@ smaller if needed
 .footer-links a:hover
 {
     color: rgb(171, 146, 191);
-    background-color: rgba(255, 247, 249, 0.15);
+    background-color: var(--snow-10);
 
 }
 
@@ -209,12 +276,12 @@ smaller if needed
 
 .footer-socials a
 {
-    color: #fff7f9;
+    color: var(--snow-100);
 }
 
 .footer-socials a:hover
 {
-    color: #ab92bf;
+    color: var(--secondary-text-color);
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -239,8 +306,6 @@ smaller if needed
 
 @media screen and (max-width: 768px)
 {
-
-
     .hamburger
     {
         display: block;
@@ -255,7 +320,7 @@ smaller if needed
         position: absolute;
         top: 10vh;
         gap: 3%;
-        background-color: var(--bistre);
+        background-color: var(--primary-color-100);
         flex-direction: column;
         align-items: center;
         animation: slide-in 0.75s ease-in-out;
@@ -265,8 +330,8 @@ smaller if needed
     {
         display: flex;
         width: 100%;
-        background-color: rgba(255, 247, 249, 0.05);
-        padding: 0.25rem 1.5rem;
+        background-color: var(--snow-10);
+
     }
 
 
@@ -277,14 +342,8 @@ smaller if needed
 
     .play-button-container .button
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(149, 232, 54, 1);
-        border: 0.2vw solid snow;
         width: 20vw;
         height: 5vh;
-        border-radius: 0.5vw;
         font-size: 1.25rem;
         transition: all 0.2s ease-in-out;
         margin-left: 5vw;
@@ -362,12 +421,6 @@ smaller if needed
         font-size: 1rem;
         padding: 0.1rem 0.75rem;
     }
-
-    /*.navigation li
-    {
-        height: 4vh;
-        width: 25vw;
-    }*/
 }
 
 
@@ -396,4 +449,11 @@ smaller if needed
     {
         transform: translateX(100%);
     }
+}
+
+
+@font-face
+{
+    font-family: Vinque;
+    src: url("../fonts/vinque rg.otf");
 }

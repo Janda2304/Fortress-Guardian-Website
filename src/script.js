@@ -4,20 +4,25 @@ let isOpen = false;
 
 hamburger.addEventListener("click", toggleMenu);
 
-function toggleMenu() {
-    if (!isOpen) {
+function toggleMenu()
+{
+    if (!isOpen)
+    {
         menu.style.display = "flex";
         menu.style.animation = "slide-in 0.75s ease-in-out";
         isOpen = true;
-    } else {
+    }
+    else
+    {
         let computedStyle = window.getComputedStyle(menu);
         let currentPosition = computedStyle.getPropertyValue("transform");
 
         menu.style.animation = "slide-out 0.75s ease-in-out";
-        menu.style.transform = currentPosition; // Set the current position as the starting position for the animation
-        setTimeout(() => {
+        menu.style.transform = currentPosition;
+        setTimeout(() =>
+        {
             menu.style.display = "none";
             isOpen = false;
-        }, 750); // Adjust the delay to match the animation duration
+        }, 750);
     }
 }
