@@ -1,0 +1,113 @@
+/*
+color palette:
+
+lawn green: #95e836
+black: #000300
+snow: #fff7f9
+coyote: #84714F
+rose ebony: #5A3A31
+bistre: #31231E
+african violet: #AB92BF
+*/
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: Roboto, serif;
+    background-image: url("../img/homepage-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.text-container
+{
+    display: flex;
+    border: 0.1vw solid var(--snow);
+    background-color: rgba(0, 3, 0, 0.25);
+    border-radius: 1.5vw;
+    width: 95%;
+    height: 75vh;
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+}
+
+.text-container h1
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: 1%;
+}
+
+
+.button-menu
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+}
+
+.dropdown-content
+{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 25%;
+}
+
+.dropdown-content button
+{
+    background-color: #f1f1f1;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    border: none;
+    width: 100%;
+}
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown .dropdown-content
+{
+
+}
+
+.dropdown-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 30%;
+    background-color: rgba(149, 232, 54, 1);
+    border: 0.2vw solid snow;
+    border-radius: 0.75vw;
+    font-family: Roboto, serif;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-button:hover
+{
+    background-color: #74b528;
+    border: 0.2vw solid #e5e0e0;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+

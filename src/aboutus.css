@@ -15,6 +15,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     color: white;
     min-width: 100%;
     min-height: 100vh;
@@ -22,4 +23,25 @@ body
     background-image: url("../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+.text-container
+{
+    display: flex;
+    border: 0.1vw solid var(--snow);
+    background-color: rgba(0, 3, 0, 0.25);
+    border-radius: 1.5vw;
+    width: 95%;
+    height: 75vh;
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+}
+
+.text-container h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: 1%;
 }

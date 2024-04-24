@@ -30,18 +30,75 @@
     </nav>
 </header>
 
+<section class="text-container">
+    <h1>About Frist Studios</h1>
+</section>
+
+<section class="button-menu">
+    <button onclick="toggleDropdown()" class="dropdown-button">Open Dropdown</button>
+    <div id="button-menu" class="dropdown-content">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+    </div>
+</section>
 
 
+<footer class="footer-container">
+    <article class="page-logo">
+        <img src="../img/frist-logo.png" alt="Frist Studios logo" class="page-logo">
+    </article>
+    <section class="footer-links-container">
+        <article class="footer-links">
+            <a href="#">Home</a>
+            <a href="about-game.html">The Game</a>
+            <a href="wiki-homepage.html">Wiki</a>
+            <a href="about-frist.html">About Us</a>
+            <a href="news.html">News</a>
+            <a href="support.html">Support</a>
+            <a href="#">Get Fortress Guardian</a>
+        </article>
+    </section>
+    <article class="footer-socials">
 
-<footer class="new-footer">
-    <a href="#">Home</a>
-    <a href="about-game.html">Game</a>
-    <a href="wiki-homepage.html">Wiki</a>
-    <a href="about-frist.html">About Us</a>
-    <a href="news.html">News</a>
-    <a href="support.html">Support</a>
-    <a href="#">Get Fortress Guardian</a>
+        <a href="https://www.discord.com">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a href="https://www.youtube.com/">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://www.twitter.com/">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://janda2304.itch.io">
+            <i class="fa-brands fa-itch-io"></i>
+        </a>
+
+    </article>
 </footer>
+
+
+<script>
+    function toggleDropdown()
+    {
+        let dropdown = document.getElementById("button-menu");
+        if (dropdown.style.display === "none")
+        {
+            dropdown.style.display = "block";
+        }
+        else
+        {
+            dropdown.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>

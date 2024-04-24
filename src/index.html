@@ -9,32 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Fortress Guardian | Home</title>
 </head>
 
 <body>
 
-<header class="header-nav">
+<header class="header-container">
 
     <a href="index.html" class="page-logo">
         <img src="../img/frist-logo.png" alt="Frist Studios logo" class="page-logo">
 
     </a>
-    <nav class="nav-links">
-        <a href="about-game.html">Game</a>
-        <a href="news.html">News</a>
-        <a href="wiki-homepage.html">Wiki</a>
-        <a href="about-frist.html">About Us</a>
-        <button class="button">Play Now</button>
+    <nav>
+        <ul id="navigation" class="navigation">
+            <li> <a href="about-game.html">Game</a> </li>
+            <li> <a href="news.html">News</a> </li>
+            <li> <a href="wiki-homepage.html">Wiki</a> </li>
+            <li> <a href="about-frist.html">About Us</a> </li>
+            <li class="play-button-container">
+                <article>
+                    <button class="button">Play Now</button>
+                </article>
+            </li>
+        </ul>
+
     </nav>
 
+    <i class="fa fa-bars hamburger" id="hamburger-menu-icon">
+    </i>
 </header>
 
+
+
 <section class="trailer-container">
-    <video class="trailer" controls>
+    <video controls>
         <source src="../videos/trailer.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -67,7 +78,7 @@
                 <i class="fa-brands fa-discord"></i>
             </a>
 
-            <a href="https://www.youtube.com/">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">
                 <i class="fa-brands fa-youtube"></i>
             </a>
 
@@ -86,7 +97,19 @@
         </article>
 </footer>
 
+<script>
+    let hamburger = document.getElementById("hamburger-menu-icon");
+    hamburger.addEventListener("click", toggleMenu);
+    function toggleMenu()
+    {
+        let menu = document.getElementById("navigation");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+</script>
+
 </body>
+
+
 </html>
 
-<!-- Zdroje: V celém projektu byl použit github copilot -->
+<!-- Zdroje: V celém projektu byl použit github copilot, https://kinsta.com/blog/responsive-web-design/, https://ssps.cajthaml.eu, Aleš mi opravil lepkavý header https://www.jakpsatweb.cz/ -->
