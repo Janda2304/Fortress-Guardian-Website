@@ -88,6 +88,16 @@ smaller if needed
 }
 
 
+.footer-page-logo
+{
+    display: flex;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .navigation-container
 {
     width: 100%;
@@ -96,10 +106,9 @@ smaller if needed
 }
 
 
-.navigation .button
+.play-button-container .button
 {
     display: flex;
-    right: 5%;
     justify-content: center;
     align-items: center;
     background-color: rgba(149, 232, 54, 1);
@@ -112,7 +121,7 @@ smaller if needed
     transition: all 0.2s ease-in-out;
 }
 
-.navigation .button:hover
+.play-button-container .button:hover
 {
     background-color: #74b528;
     border: 0.2vw solid #e5e0e0;
@@ -230,6 +239,8 @@ smaller if needed
 
 @media screen and (max-width: 768px)
 {
+
+
     .hamburger
     {
         display: block;
@@ -243,21 +254,146 @@ smaller if needed
         height: 100vh;
         position: absolute;
         top: 10vh;
+        gap: 3%;
         background-color: var(--bistre);
         flex-direction: column;
         align-items: center;
-        animation: rotate 0.5s linear;
+        animation: slide-in 0.75s ease-in-out;
+    }
 
+    .navigation a
+    {
+        display: flex;
+        width: 100%;
+        background-color: rgba(255, 247, 249, 0.05);
+        padding: 0.25rem 1.5rem;
+    }
+
+
+    .play-button-container
+    {
+        justify-content: center;
+    }
+
+    .play-button-container .button
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(149, 232, 54, 1);
+        border: 0.2vw solid snow;
+        width: 20vw;
+        height: 5vh;
+        border-radius: 0.5vw;
+        font-size: 1.25rem;
+        transition: all 0.2s ease-in-out;
+        margin-left: 5vw;
+    }
+
+    .footer-container
+    {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-page-logo
+    {
+        width: auto;
+        height: 50%;
+    }
+
+    .footer-links a
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-links-container
+    {
+        display: flex;
+        /*position: absolute; goofy ahh footer (v2)*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .footer-links
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-links :nth-child(1n)
+    {
+        grid-column: span 2;
+    }
+
+    .footer-links :last-child
+    {
+        grid-column: span 4;
+    }
+
+    .footer-socials
+    {
+        width: 100%;
+        justify-content: center;
+        height: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 576px)
+{
+    .play-button-container .button
+    {
+        font-size: 1rem;
+    }
+
+    .navigation a
+    {
+        font-size: 1rem;
+        padding: 0.1rem 0.75rem;
+    }
+
+    /*.navigation li
+    {
+        height: 4vh;
+        width: 25vw;
+    }*/
+}
+
+
+@keyframes slide-in
+{
+    from
+    {
+        transform: translateX(100%);
+
+    }
+    to
+    {
+        transform: translateX(0);
     }
 }
 
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+@keyframes slide-out
+{
+    from
+    {
+        transform: translateX(0);
+
     }
-    to {
-        transform: rotate(360deg);
+    to
+    {
+        transform: translateX(100%);
     }
 }
-

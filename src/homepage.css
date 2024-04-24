@@ -21,7 +21,7 @@ body
     justify-content: space-between;
     color: white;
     min-width: 100%;
-    min-height: 200vh;
+    min-height: 100vh;
     font-family: Roboto, serif;
     background-image: url("../img/homepage-background.png");
     background-size: cover;
@@ -32,22 +32,24 @@ body
 .trailer-container
 {
     display: flex;
-    width: 65%;
-    height: 75vh;
+    width: 40vw;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     align-self: center;
     border-radius: 0.5vw;
-    margin-top: 7.5%;
+    margin-top: 5%;
 }
 
 .game-info-container
 {
     display: flex;
     align-self: center;
+    margin-top: 2%;
     justify-content: space-between;
     width: 65%;
     height: 10vh;
+    margin-bottom: 50vh;
 }
 
 .game-button
@@ -61,7 +63,7 @@ body
     border: 0.2vw solid snow;
     border-radius: 0.5vw;
     font-family: Roboto, serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     transition: all 0.2s ease-in-out;
 }
 
@@ -79,4 +81,63 @@ video
     width: 100%;
     border-radius: 0.5vw;
     height: 100%;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .trailer-container
+    {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .game-info-container
+    {
+        width: 90%;
+    }
+
+    .game-button
+    {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .trailer-container
+    {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .game-info-container
+    {
+        width: 80%;
+    }
+
+    .game-button
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .trailer-container
+    {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .game-info-container
+    {
+        width: 90%;
+    }
+
+    .game-button
+    {
+        font-size: 1.1rem;
+    }
+    
 }
