@@ -34,6 +34,7 @@ body
     display: flex;
     width: 40vw;
     height: 40vh;
+    min-height: 300px;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -50,6 +51,7 @@ body
     gap: 4%;
     width: 65%;
     height: 10vh;
+    min-height: 60px;
     margin-bottom: 50vh;
 }
 
@@ -60,7 +62,8 @@ body
     align-items: center;
     width: 18%;
     height: 60%;
-    background-color: rgba(149, 232, 54, 1);
+    font-family: Vinque, Roboto, serif;
+    background-color: var(--button-color);
     border: 0.2vw solid snow;
     border-radius: 0.5vw;
     font-size: 1.5rem;
@@ -69,7 +72,7 @@ body
 
 .game-button:hover
 {
-    background-color: #74b528;
+    background-color: var(--button-hover-color);
     border: 0.2vw solid #e5e0e0;
     cursor: pointer;
     transform: scale(1.1);
