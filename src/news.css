@@ -39,7 +39,7 @@ body
     top: 42%;
 }
 
-.news-labels-container h2
+.news-label-container h2
 {
     font-size: 1.5rem;
     background-color: var(--snow-70);
@@ -48,7 +48,7 @@ body
     font-weight: 600;
 }
 
-.news-labels-container p
+.news-label-container p
 {
     display: flex;
     font-size: 1rem;
@@ -58,7 +58,7 @@ body
     font-weight: 600;
 }
 
-.news-labels-container
+.news-label-container
 {
     display: flex;
     flex-direction: column;

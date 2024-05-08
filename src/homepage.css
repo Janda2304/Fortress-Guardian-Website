@@ -103,10 +103,11 @@ video
     .game-button
     {
         font-size: 1.2rem;
+        width: 25%;
     }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 992px) and (min-width: 768px)
 {
     .trailer-container
     {
@@ -122,7 +123,7 @@ video
     .game-button
     {
         font-size: 1.3rem;
-        width: 20%;
+        width: 50%;
         height: 55%;
     }
 }
@@ -139,22 +140,10 @@ video
     {
         width: 90%;
     }
-
-
-
     .game-button
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 1rem;
         width: 30%;
-        height: 50%;
-        background-color: rgba(149, 232, 54, 1);
-        border: 0.2vw solid snow;
-        border-radius: 0.5vw;
-        font-family: Roboto, serif;
-        font-size: 1.1rem;
-        transition: all 0.2s ease-in-out;
+        height: 55%;
     }
-    
 }
