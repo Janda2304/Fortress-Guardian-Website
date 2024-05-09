@@ -26,3 +26,17 @@ function toggleMenu()
         }, 750);
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let backToTopButton = document.getElementById('back-to-top');
+
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});

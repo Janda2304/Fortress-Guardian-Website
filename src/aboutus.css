@@ -19,7 +19,7 @@ body
     color: white;
     min-width: 100%;
     min-height: 100vh;
-    font-family: Roboto, serif;
+    font-family: Vinque, Roboto, serif;
     background-image: url("../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,19 +29,96 @@ body
 .text-container
 {
     display: flex;
-    border: 0.1vw solid var(--snow);
-    background-color: rgba(0, 3, 0, 0.25);
-    border-radius: 1.5vw;
-    width: 95%;
-    height: 75vh;
-    margin-top: 7.5%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color-50);
+    width: 60%;
+    text-align: center;
+    height: 50%;
+    border-radius: 1vw;
 }
 
-.text-container h1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 2.5rem;
-    margin-top: 1%;
+
+.other-game-buttons
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    column-gap: .5%;
+    row-gap: 5%;
 }
+
+.fortress-button
+{
+   grid-column: span 3;
+}
+
+.other-game-buttons button
+{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Vinque, Roboto, serif;
+    background-color: var(--button-color);
+    border: 0.2vw solid snow;
+    border-radius: 0.5vw;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.other-game-buttons button:hover
+{
+    background-color: var(--button-hover-color);
+    border: 0.2vw solid #e5e0e0;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+
+
+.text-container h1
+{
+    font-size: 2.5rem;
+    padding: 0.75rem 0.75rem;
+    color: var(--secondary-color-100);
+}
+
+b
+{
+    font-weight: 800;
+}
+
+.text-container p
+{
+    font-size: 1.25rem;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .text-container
+    {
+        width: 80%;
+    }
+
+    .other-game-buttons
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .other-game-buttons button
+    {
+        margin: 2.5% 0;
+    }
+}
+

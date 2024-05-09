@@ -196,6 +196,11 @@ body
     {
         font-size: 1.5rem;
     }
+
+    .footer-back-to-top
+    {
+       display: none;
+    }
 }
 
 

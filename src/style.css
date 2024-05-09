@@ -52,7 +52,7 @@
     --text-color: #c1839f;
     --secondary-text-color: #ab92bf;
 
-    --black: #000300;
+    --black: rgb(0, 3, 0);
 
 
     --snow-100: #fff7f9;
@@ -200,14 +200,55 @@
 }
 
 
+
+
 .footer-container
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     width: 100%;
     background-color: var(--primary-color-100);
 }
+
+.footer-credits
+{
+    margin-bottom: .5%;
+    margin-left: .5%;
+}
+
+.footer-back-to-top {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: .5%;
+    padding-right: .5%;
+    height: 3vh;
+    color: var(--snow-100);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-back-to-top::after {
+    content: "Back to Top";
+    font-size: 1rem;
+    text-align: center;
+    font-family: Vinque, Roboto, serif;
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    color: var(--snow-100);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-back-to-top:hover::after {
+    opacity: 1; /* Show the tooltip on hover */
+}
+
 
 
 .footer-links-container
