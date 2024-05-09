@@ -1,12 +1,62 @@
 [
   {
-    "title": "Devlog 6 - The Future",
+    "title": "Devlog 7 - The Future",
     "date": "April 24, 2024",
-    "image": ""
+    "image": "/img/devlog6-future.png",
+    "imageAlt": "Training Grounds preview"
   },
   {
-    "title": "Devlog 5 - Save System",
+    "title": "Devlog 6 - Save System",
     "date": "February 15, 2024",
-    "image": ""
+    "image": "/img/devlog5.png",
+    "imageAlt": "Save System Code"
+  },
+  {
+    "title": "Devlog 5 - New Enemies",
+    "date": "IDK NEAR FUTURE",
+    "image": "/img/devlog4.png",
+    "imageAlt": "New Enemies"
+  },
+  {
+    "title": "Devlog 4 - IDK NECO",
+    "date": "IDK NEAR FUTURE",
+    "image": "/img/devlog3.png",
+    "imageAlt": "IDK NECO"
+  },
+  {
+    "title": "Devlog 3 - New settings menu",
+    "date": "January 20, 2024",
+    "image": "/img/devlog2-settings.png",
+    "imageAlt": "new settings menu",
+    "devlogUrl": "../news/devlog-template.html",
+    "devlogTitle": "New settings menu",
+    "devlogText": ""
+  },
+  {
+        "title": "Devlog 2 - New Trees",
+        "date": "November 11, 2023",
+        "image": "/img/devlog1-trees.png",
+        "imageAlt": "new trees",
+        "devlogUrl": "../news/devlog-template.html",
+        "devlogTitle": "Romardia's new forests",
+        "devlogText": ""
+  },
+  {
+    "title": "Devlog 1 - map improvements",
+    "date": "May 26, 2023",
+    "image": "/img/devlogX-map.png",
+    "imageAlt": "new fortress building",
+    "devlogUrl": "../news/devlog-template.html",
+    "devlogTitle": "Romardia's Landscapes reimagined",
+    "devlogText": ""
+  },
+  {
+    "title": "Devlog 0 - Romardia's Beginning",
+    "date": "January 25, 2023",
+    "image": "/img/devlog0-beginning.png",
+    "imageAlt": "fortress guardian dev v0.11 training grounds",
+    "devlogUrl": "../news/devlog-template.html",
+    "devlogTitle": "Fortress Guardian",
+    "devlogText": ""
   }
 ]

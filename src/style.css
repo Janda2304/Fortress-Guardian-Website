@@ -108,11 +108,12 @@
 .navigation
 {
     display: flex;
-    gap: 1%;
+    gap: 5%;
     flex-direction: row;
     align-items: center;
     width: 80vw;
 }
+
 
 
 .play-button-container
@@ -120,22 +121,22 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    flex-grow: 1;
 }
 
 .navigation a
 {
     display: flex;
     text-decoration: none;
-    width: 7.5vw;
-    height: 4vh;
     align-items: center;
     justify-content: center;
+    text-wrap: none;
+    width: auto;
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 500;
     border-radius: 0.5vw;
-    padding: 0.25rem 1.5rem;
+    padding: 0.25rem 0.25rem;
 }
 
 .navigation a:hover
@@ -185,7 +186,7 @@
     font-family: Vinque, Roboto, serif;
     border-radius: 0.5vw;
     font-size: 1.7rem;
-    padding: 0 5rem;
+    padding: 0 0.5rem;
     transition: all 0.2s ease-in-out;
     min-height: 35px;
 }
