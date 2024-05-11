@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'Vinque';
+    src: url('../fonts/vinque rg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
 :root
 {
     --primary-color-100: rgba(60, 60, 60, 1);
@@ -208,6 +213,7 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+    margin-top: 3%;
     width: 100%;
     background-color: var(--primary-color-100);
 }
@@ -367,6 +373,7 @@
 {
     display: none;
     cursor: pointer;
+    z-index: 5000;
     padding: 1vw;
     font-size: 2rem;
     position: absolute;
@@ -398,20 +405,37 @@
         display: none;
         position: absolute;
         flex-direction: column;
-        width: 50%;
+        align-self: center;
         right: 0;
-        gap: 2%;
+        width: 100%;
+        gap: 1%;
         height: 100vh;
+        min-height: 400px;
         top: 10vh;
         background-color: var(--primary-color-100);
         z-index: 100;
         box-shadow: 0 0.25vw rgba(0, 0, 0, 0.5);
-        animation: slide-in 0.75s ease-in-out;
+        animation: slide-in 0.25s ease-in-out;
+    }
+
+    .navigation li
+    {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation :first-child
+    {
+        margin-top: 5%;
     }
 
     .navigation a
     {
-        width: 95%;
+        width: 50%;
+        font-size: 2rem;
+        padding: 0.5rem 0.5rem;
         text-decoration: none;
         color: var(--text-color);
         background-color: var(--snow-10);
@@ -426,9 +450,9 @@
     .play-button-container .button
     {
         height: 5vh;
+        width: 50%;
         font-size: 1.25rem;
         transition: all 0.2s ease-in-out;
-        width: auto;
     }
 
     .footer-container
@@ -437,6 +461,7 @@
         width: 100%;
         min-height: 450px;
         align-items: center;
+        position: static;
     }
 
     .footer-page-logo
@@ -517,12 +542,11 @@
 {
     from
     {
-        transform: translateX(100%);
-
+        transform: translateY(-100%);
     }
     to
     {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
@@ -531,12 +555,11 @@
 {
     from
     {
-        transform: translateX(0);
-
+        transform: translateY(0);
     }
     to
     {
-        transform: translateX(100%);
+        transform: translateY(-100%);
     }
 }
 

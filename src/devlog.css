@@ -48,6 +48,7 @@ img
 
 .title
 {
+    padding-top: 1%;
     font-size: 2rem;
     text-align: center;
     color: var(--secondary-color-100);

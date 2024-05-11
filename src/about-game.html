@@ -3,15 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutus.css">
+
     <title>Fortress Guardian | About</title>
 </head>
 <body>
+
+<header class="header-container">
+    <a href="../index.html" class="page-logo">
+        <img src="../img/frist-logo.png" alt="Frist Studios logo" class="page-logo">
+    </a>
+    <nav>
+        <ul id="navigation" class="navigation">
+            <li> <a href="about-game.html">Game</a> </li>
+            <li> <a href="news.html">News</a> </li>
+            <li> <a href="wikipage.html">Wiki</a> </li>
+            <li> <a href="aboutus.html">About Us</a> </li>
+            <li class="play-button-container">
+                <button class="button">Play Now</button>
+            </li>
+        </ul>
+
+    </nav>
+
+    <i class="fa fa-bars hamburger" id="hamburger-menu-icon"></i>
+</header>
+
+<section class="text-container">
+    <h1 id="aboutusTitle">Fortress Guardian</h1>
+    <p><b>Welcome Guardian</b></p>
+    <p id="aboutusText">
+        Fortress Guardian is first-person tower defense game, where you defend your fortress against continuous waves of enemies.
+        <br><br>
+        <b>Story: </b>
+        <br>
+        Embark on an epic journey in the enchanting realm of Romardia, set within the galaxy of Ruhitia. Recently, Romardia's largest towns and  fortresses have fallen to relentless invasions by unknown forces.
+
+        Once an elderly sage known as Eldin the Wise, a revered guardian of the ancient fortresses of Romardia, calls upon you. Eldin posesses invaluable wisdom and knowledge of fortress guardianship. He starts to teach you as soon as possible. However, with each passing lesson, Eldin's vitality wanes, leaving you to ponder the weighty responsibility that awaits.
+
+        Are you prepared to descend to the realm of Romardia safeguarding it against impending doom? Will you rise to the challenge and destroy the forces threatening to shatter the sacred crystal of Ruhitia, thereby preserving the very fabric of Romardia?
+        <br><br>
+        <b>Features:</b>
+        <br>
+        Fully procedural wave generation system
+        <br>
+        Multiple maps
+        <br>
+        Multiple enemies and buildings
+        <br>
+        Complex saving system
+        <br>
+        4 difficulties
+        <br>
+        Two camera perspectives
+    </p>
+</section>
+
+
+<section class="other-game-buttons">
+    <button class="fortress-button" id="fg-button">Play Fortress Guardian</button>
+</section>
+
+
+
+
+<footer class="footer-container">
+    <section class="footer-links-container">
+        <a href="../index.html">Home</a>
+        <a href="about-game.html">The Game</a>
+        <a href="wikipage.html">Wiki</a>
+        <a href="#">About Us</a>
+        <a href="news.html">News</a>
+        <a href="aboutus.html">Support</a>
+        <a href="https://github.com/Janda2304/Fortress-Guardian/releases/tag/0.19.0">Get Fortress Guardian</a>
+    </section>
+
+    <section class="secondary-footer-links-container">
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="eula.html">EULA</a>
+        <a href="#">Contact Us</a>
+    </section>
+    <article class="footer-socials">
+
+        <a href="https://discord.com/404">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://www.twitter.com/">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://janda2304.itch.io">
+            <i class="fa-brands fa-itch-io"></i>
+        </a>
+
+    </article>
+
+    <article class="footer-credits">
+        <p>© 2024 Frist Studios. All rights reserved.</p>
+    </article>
+
+    <a href="#" class="fa fa-arrow-up footer-back-to-top" id="back-to-top"></a>
+</footer>
+
+<script src="script.js"></script>
+<script src="aboutus.js"></script>
+<script src="about-game.js"></script>
+
+
 </body>
 </html>

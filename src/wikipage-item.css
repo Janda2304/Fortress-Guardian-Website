@@ -37,11 +37,14 @@ h1
 
 .main-text
 {
-    align-self: flex-start;
-    padding-left: .5%;
-    padding-top: 5%;
-    padding-bottom: 1%;
+    align-self: center;
+    padding: .5% 1% 1% 1%;
     text-align: center;
+}
+
+div
+{
+    padding: 2.5%;
 }
 
 .stats-list

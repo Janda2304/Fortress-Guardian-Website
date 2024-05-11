@@ -1,38 +1,39 @@
 [
   {
     "title": "Devlog 7 - The Future",
-    "date": "April 24, 2024",
+    "date": "May 11, 2024",
     "image": "/img/devlog7-future.png",
     "imageAlt": "Training Grounds preview",
     "devlogUrl": "../src/news/devlog7.html",
     "devlogTitle": "The Future of Fortress Guardian"
 
   },
+
   {
-    "title": "Devlog 6 - Save System",
-    "date": "February 15, 2024",
-    "image": "/img/devlog5-saving.png",
-    "imageAlt": "Save System Code",
-    "devlogUrl": "../src/news/devlog6.html",
-    "devlogTitle": "Save System",
-    "devlogText": ""
-  },
-  {
-    "title": "Devlog 5 - New Enemies",
-    "date": "IDK NEAR FUTURE",
-    "image": "",
+    "title": "Devlog 6 - Future of enemies",
+    "date": "April 24, 2024",
+    "image": "/img/goblin.png",
     "imageAlt": "New Enemies",
-    "devlogUrl": "../src/news/devlog5.html",
+    "devlogUrl": "../src/news/devlog6.html",
     "devlogTitle": "New Enemies",
     "devlogText": ""
   },
   {
-    "title": "Devlog 4 - IDK NECO",
-    "date": "IDK NEAR FUTURE",
-    "image": "",
+    "title": "Devlog 5 - UI Improvements",
+    "date": "April 18, 2024",
+    "image": "/img/pause-menu.png",
     "imageAlt": "IDK NECO",
+    "devlogUrl": "../src/news/devlog5.html",
+    "devlogTitle": "THIS DEVLOG IS NOT YET COMPLETE",
+    "devlogText": ""
+  },
+  {
+    "title": "Devlog 4 - Save System",
+    "date": "February 15, 2024",
+    "image": "/img/devlog5-saving.png",
+    "imageAlt": "Save System Code",
     "devlogUrl": "../src/news/devlog4.html",
-    "devlogTitle": "IDK NECO",
+    "devlogTitle": "Save System",
     "devlogText": ""
   },
   {
@@ -40,7 +41,7 @@
     "date": "January 20, 2024",
     "image": "/img/devlog3-settings.png",
     "imageAlt": "new settings menu",
-    "devlogUrl": "../src/news/devlog-template.html",
+    "devlogUrl": "../src/news/devlog3.html",
     "devlogTitle": "New settings menu",
     "devlogText": ""
   },
@@ -56,7 +57,7 @@
   {
     "title": "Devlog 1 - map improvements",
     "date": "May 26, 2023",
-    "image": "https://cdn2.unrealengine.com/egs-fallguys-mediatonic-g1a-00-1920x1080-75b891d04ff9.jpg",
+    "image": "/img/magical-forest.png",
     "imageAlt": "new fortress building",
     "devlogUrl": "../src/news/devlog1.html",
     "devlogTitle": "Romardia's Landscapes reimagined",
@@ -65,9 +66,9 @@
   {
     "title": "Devlog 0 - Romardia's Beginning",
     "date": "January 25, 2023",
-    "image": "/img/devlog0-beginning.png",
+    "image": "/img/v0.2-cover2.png",
     "imageAlt": "fortress guardian dev v0.11 training grounds",
-    "devlogUrl": "../src/news/devlog-template.html",
+    "devlogUrl": "../src/news/devlog0.html",
     "devlogTitle": "Fortress Guardian",
     "devlogText": ""
   }

@@ -3,14 +3,33 @@ document.addEventListener('DOMContentLoaded', function() {
     let searchTerm = '';
 
     let searchButton = document.getElementById('wiki-search-button');
+    let categoryButtons = document.getElementsByClassName('category');
+
+    Array.from(categoryButtons).forEach((button) =>
+    {
+        button.href = 'wiki/no-result.html?search=' + button.textContent;
+    });
+
+
 
     // Function to handle search
     function handleSearch() {
         searchTerm = search.value.trim();
 
-        if (searchTerm.includes('goblin') || searchTerm.includes('Goblin')) {
+        if (searchTerm.includes('goblin') || searchTerm.includes('Goblin'))
+        {
             window.location.href = 'wiki/red-goblin.html';
-        } else {
+        }
+        else if (searchTerm.includes('bear') || searchTerm.includes('Bear'))
+        {
+            window.location.href = 'wiki/bear.html';
+        }
+        else if (searchTerm.includes('training') || searchTerm.includes('Training') || searchTerm.includes('grounds') || searchTerm.includes('Grounds'))
+        {
+            window.location.href = 'wiki/training-grounds.html';
+        }
+        else
+        {
             window.location.href = 'wiki/no-result.html?search=' + searchTerm;
         }
     }

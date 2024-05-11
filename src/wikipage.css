@@ -2,7 +2,6 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     color: white;
     min-width: 100%;
     min-height: 100vh;
@@ -16,10 +15,10 @@ body
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 4%;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
     margin-top: 2.5%;
 }
 
@@ -30,12 +29,12 @@ body
     flex-direction: row;
     align-items: center;
     width: 80%;
-    height: 2.5vh;
     background-color: var(--tertiary-color-50);
     border: 0.15vw solid var(--quaternary-color-100);
     border-radius: 0.25vw;
     font-size: 1.1rem;
     font-weight: 600;
+    margin-bottom: 5%;
 
 }
 
@@ -62,4 +61,63 @@ body
 ::placeholder
 {
     color: var(--snow-100);
+}
+
+.wiki-content
+{
+    width: 50%;
+    background-color: var(--snow-100);
+    box-shadow: 0.25vw 0.25vw 0.5vw rgba(0, 0, 0, 0.5);
+    border-radius: 0.5vw;
+    padding: .5%;
+}
+
+.title
+{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--tertiary-color-100);
+}
+
+.main-text
+{
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--quaternary-color-100);
+}
+
+.categories
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+    width: 100%;
+}
+
+.category
+{
+    display: flex;
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: var(--tertiary-color-30);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    width: 80%;
+    border-radius: 0.25vw;
+}
+
+.category:hover
+{
+    background-color: var(--tertiary-color-60);
+}
+
+@media screen and (max-width: 768px)
+{
+    .wiki-content
+    {
+        width: 80%;
+    }
 }
