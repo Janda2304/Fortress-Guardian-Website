@@ -1,0 +1,102 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: Vinque, Roboto, serif;
+    background-image: url("../img/homepage-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+
+.wiki-container
+{
+    position: relative;
+    display: flex;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    border-radius: 1vw;
+    background-color: var(--snow-50);
+    align-items: center;
+    color: black;
+}
+
+h1
+{
+    font-size: 3rem;
+    align-self: center;
+}
+
+.main-text
+{
+    align-self: flex-start;
+    padding-left: .5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.stats-list
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--secondary-color-50);
+    gap: 1%;
+    padding: 1%;
+    border-radius: 0.25vw;
+    width: 100%;
+}
+
+.stat-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 0.5vw;
+    background-color: var(--quaternary-color-50);
+    color: white;
+    text-align: center;
+}
+
+.stats
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.stats h2
+{
+    font-size: 1.5rem;
+}
+
+b
+{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+img
+{
+    display: flex;
+    width: 75%;
+    height: auto;
+    align-self: center;
+}
+
+p i
+{
+    color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,67 @@
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: Vinque, Roboto, serif;
+    background-image: url("../img/devlog7-future.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(0.15rem);
+}
+
+.text-container
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    text-align: center;
+    line-height: 1.25;
+    flex-direction: column;
+    gap: 1.5%;
+    align-self: center;
+    width: 95%;
+    background-color: var(--snow-50);
+    border-radius: 0.5vw;
+    box-shadow: rgba(0, 0, 0, 0.9) 0 0 1vw;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: .5%;
+    height: auto;
+    border-radius: 0.5vw;
+}
+
+.text-container i
+{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.title
+{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--secondary-color-100);
+}
+
+.text
+{
+    padding: 1%;
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+b
+{
+    font-weight: 800;
+    font-size: 1.25rem;
+}

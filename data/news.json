@@ -4,7 +4,7 @@
     "date": "April 24, 2024",
     "image": "/img/devlog7-future.png",
     "imageAlt": "Training Grounds preview",
-    "devlogUrl": "../news/devlog7.html",
+    "devlogUrl": "../src/news/devlog7.html",
     "devlogTitle": "The Future of Fortress Guardian"
 
   },
@@ -13,25 +13,25 @@
     "date": "February 15, 2024",
     "image": "/img/devlog5-saving.png",
     "imageAlt": "Save System Code",
-    "devlogUrl": "../news/devlog6.html",
+    "devlogUrl": "../src/news/devlog6.html",
     "devlogTitle": "Save System",
     "devlogText": ""
   },
   {
     "title": "Devlog 5 - New Enemies",
     "date": "IDK NEAR FUTURE",
-    "image": "/img/devlog4.png",
+    "image": "",
     "imageAlt": "New Enemies",
-    "devlogUrl": "../news/devlog5.html",
+    "devlogUrl": "../src/news/devlog5.html",
     "devlogTitle": "New Enemies",
     "devlogText": ""
   },
   {
     "title": "Devlog 4 - IDK NECO",
     "date": "IDK NEAR FUTURE",
-    "image": "/img/devlog4.png",
+    "image": "",
     "imageAlt": "IDK NECO",
-    "devlogUrl": "../news/devlog4.html",
+    "devlogUrl": "../src/news/devlog4.html",
     "devlogTitle": "IDK NECO",
     "devlogText": ""
   },
@@ -40,7 +40,7 @@
     "date": "January 20, 2024",
     "image": "/img/devlog3-settings.png",
     "imageAlt": "new settings menu",
-    "devlogUrl": "../news/devlog-template.html",
+    "devlogUrl": "../src/news/devlog-template.html",
     "devlogTitle": "New settings menu",
     "devlogText": ""
   },
@@ -49,7 +49,7 @@
         "date": "November 11, 2023",
         "image": "/img/devlog2-trees.png",
         "imageAlt": "new trees",
-        "devlogUrl": "../news/devlog-template.html",
+        "devlogUrl": "../src/news/devlog2.html",
         "devlogTitle": "Romardia's new forests",
         "devlogText": ""
   },
@@ -58,7 +58,7 @@
     "date": "May 26, 2023",
     "image": "https://cdn2.unrealengine.com/egs-fallguys-mediatonic-g1a-00-1920x1080-75b891d04ff9.jpg",
     "imageAlt": "new fortress building",
-    "devlogUrl": "../news/devlog-template.html",
+    "devlogUrl": "../src/news/devlog1.html",
     "devlogTitle": "Romardia's Landscapes reimagined",
     "devlogText": ""
   },
@@ -67,7 +67,7 @@
     "date": "January 25, 2023",
     "image": "/img/devlog0-beginning.png",
     "imageAlt": "fortress guardian dev v0.11 training grounds",
-    "devlogUrl": "../news/devlog-template.html",
+    "devlogUrl": "../src/news/devlog-template.html",
     "devlogTitle": "Fortress Guardian",
     "devlogText": ""
   }

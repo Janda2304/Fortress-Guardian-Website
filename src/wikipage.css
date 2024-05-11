@@ -57,5 +57,9 @@ body
     font-size: 1.1rem;
     font-family: Vinque, Roboto, serif;
     font-weight: 600;
+}
 
+::placeholder
+{
+    color: var(--snow-100);
 }

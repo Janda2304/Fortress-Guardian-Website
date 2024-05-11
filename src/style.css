@@ -216,6 +216,7 @@
 {
     margin-bottom: .5%;
     margin-left: .5%;
+    width: 40%;
 }
 
 .footer-back-to-top {
@@ -331,15 +332,17 @@
 .footer-socials
 {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin-right: 0.5vw;
     margin-bottom: 0.25vh;
-    align-self: flex-end;
     flex-direction: row;
     font-size: 2rem;
     align-items: flex-end;
     justify-content: flex-end;
     gap: 0.5%;
-    width: 80%;
+    width: 60%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -375,37 +378,49 @@
 
 @media screen and (max-width: 768px)
 {
+    li
+    {
+        display: flex;
+        align-self: center;
+    }
     .hamburger
     {
         display: block;
     }
 
+    .footer-back-to-top
+    {
+        display: none;
+    }
+
     .navigation
     {
         display: none;
+        position: absolute;
+        flex-direction: column;
         width: 50%;
         right: 0;
+        gap: 2%;
         height: 100vh;
-        position: absolute;
         top: 10vh;
-        gap: 3%;
         background-color: var(--primary-color-100);
-        flex-direction: column;
-        align-items: center;
+        z-index: 100;
+        box-shadow: 0 0.25vw rgba(0, 0, 0, 0.5);
         animation: slide-in 0.75s ease-in-out;
     }
 
     .navigation a
     {
-        display: flex;
-        width: 100%;
+        width: 95%;
+        text-decoration: none;
+        color: var(--text-color);
         background-color: var(--snow-10);
-
     }
 
     .play-button-container
     {
         justify-content: center;
+        flex-grow: 0;
     }
 
     .play-button-container .button
@@ -413,7 +428,6 @@
         height: 5vh;
         font-size: 1.25rem;
         transition: all 0.2s ease-in-out;
-        margin-left: 5vw;
         width: auto;
     }
 
@@ -472,8 +486,14 @@
     {
         width: 100%;
         justify-content: center;
-        align-items: flex-end;
-        font-size: 2rem;
+        margin-right: 0;
+        position: static;
+    }
+
+    .footer-credits
+    {
+        width: 100%;
+        text-align: center;
     }
 
 }
@@ -487,8 +507,8 @@
 
     .navigation a
     {
-        font-size: 1rem;
-        padding: 0.1rem 0.75rem;
+        font-size: 1.3rem;
+        padding: 0.1rem 0.5rem;
     }
 }
 
