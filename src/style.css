@@ -100,14 +100,23 @@
     display: flex;
     position: sticky;
     flex-direction: row;
-    top: 0;
-    width: 100%;
+    /*top: 0;
+    width: 100%;*/
+    align-self: center;
     height: 10vh;
     min-height: 75px;
     gap: 3%;
     background-color: var(--primary-color-100);
     align-items: center;
     z-index: 100;
+
+
+    border-radius: 2.5vw;
+    margin-top: 2%;
+    transition: ease-in-out 0.2s;
+    box-shadow: 0.1vw 0.1vw rgba(0, 0, 0, 0.5);
+    width: 99%;
+    top: 1.5rem;
 }
 
 .navigation
@@ -141,7 +150,7 @@
     font-size: 2rem;
     font-weight: 500;
     border-radius: 0.5vw;
-    padding: 0.25rem 0.25rem;
+    padding: 0.5rem 0.25rem;
 }
 
 .navigation a:hover
@@ -187,13 +196,13 @@
     align-items: center;
     background-color: var(--button-color);
     border: 0.2vw solid var(--snow-100);
-    height: 5.5vh;
+    height: auto;
     font-family: Vinque, Roboto, serif;
     border-radius: 0.5vw;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding: 0 0.5rem;
     transition: all 0.2s ease-in-out;
-    min-height: 35px;
+    min-height: 40px;
 }
 
 .play-button-container .button:hover
@@ -279,7 +288,6 @@
 .footer-links-container :last-child
 {
     grid-column: span 2;
-
 }
 
 .footer-links-container a
@@ -374,7 +382,7 @@
     display: none;
     cursor: pointer;
     z-index: 5000;
-    padding: 1vw;
+    padding: 1vw 1vw 1vw 1.5vw;
     font-size: 2rem;
     position: absolute;
     right: 0;
@@ -414,7 +422,7 @@
         top: 10vh;
         background-color: var(--primary-color-100);
         z-index: 100;
-        box-shadow: 0 0.25vw rgba(0, 0, 0, 0.5);
+        box-shadow: 0.1vw 0.1vw rgba(0, 0, 0, 0.5);
         animation: slide-in 0.25s ease-in-out;
     }
 
@@ -571,10 +579,16 @@
 }
 
 
-@media screen and (max-width: 996px)
+@media screen and (max-width: 992px)
 {
     .play-button-container .button
     {
         padding: 0 0.25rem;
+    }
+
+    .navigation a
+    {
+        font-size: 1.75rem;
+        padding: 0.25rem 0.25rem;
     }
 }

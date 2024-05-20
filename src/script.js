@@ -1,8 +1,21 @@
 let hamburger = document.getElementById("hamburger-menu-icon");
 let menu = document.getElementById("navigation");
+let headerBackground = document.getElementsByClassName("header-container")[0];
 let isOpen = false;
 
+let screenWidth = window.matchMedia("(min-width: 768px)");
+
 hamburger.addEventListener("click", toggleMenu);
+
+
+function resetStyling()
+{
+    menu.removeAttribute("style");
+    headerBackground.removeAttribute("style");
+    hamburger.classList.remove('fa-times');
+    hamburger.classList.add('fa-bars');
+    isOpen = false;
+}
 
 function toggleMenu()
 {
@@ -10,6 +23,8 @@ function toggleMenu()
     {
         menu.style.display = "flex";
         menu.style.animation = "slide-in 0.4s ease-in-out";
+        headerBackground.style.borderBottomLeftRadius = "0";
+        headerBackground.style.borderBottomRightRadius = "0";
         isOpen = true;
         hamburger.classList.remove('fa-bars');
         hamburger.classList.add('fa-times');
@@ -21,6 +36,8 @@ function toggleMenu()
 
         menu.style.animation = "slide-out 0.4s ease-in-out";
         menu.style.transform = currentPosition;
+        headerBackground.style.borderBottomLeftRadius = "2.5vw";
+        headerBackground.style.borderBottomRightRadius = "2.5vw";
         hamburger.classList.remove('fa-times');
         hamburger.classList.add('fa-bars');
         setTimeout(() =>
@@ -46,4 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     {
         window.location.href = "/src/about-game.html";
     });
+
+    screenWidth.addEventListener("change", resetStyling);
 });

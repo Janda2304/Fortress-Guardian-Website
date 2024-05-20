@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function()
 {
-    let devlogTitle = document.getElementById("devlogTitle");
-    let devlogText = document.getElementById("devlogContent");
+    let devlogTitle = document.getElementById("devlog-title");
+    let devlogText = document.getElementById("devlog-text");
 
     let i = 0;
     fetch("../../data/news.json").then(response => response.json()).then(data =>
