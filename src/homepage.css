@@ -42,7 +42,7 @@ body
     border-radius: 0.5vw;
     margin-top: 5%;
     background-color: var(--snow-50);
-      box-shadow: 0 0 0.5vw 0.1vw rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.5vw 0.1vw rgba(0, 0, 0, 0.5);
 }
 
 

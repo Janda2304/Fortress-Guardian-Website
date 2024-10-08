@@ -1,5 +1,23 @@
 [
   {
+    "title": "Devlog 10 - Difficulties",
+    "date": "October 1, 2024",
+    "image": "/img/devlog1.png",
+    "imageAlt": "difficulty implementation code preview",
+    "devlogUrl": "../src/news/devlog10.html",
+    "devlogTitle": "Difficulties",
+    "devlogText": ""
+  },
+  {
+    "title": "Devlog 9 - Desert",
+    "date": "August 25, 2024",
+    "image": "/img/devlog9-desert.png",
+    "imageAlt": "Desert Oasis preview",
+    "devlogUrl": "../src/news/devlog9.html",
+    "devlogTitle": "Desert",
+    "devlogText": ""
+  },
+  {
     "title": "Devlog 8 - Updated Menus",
     "date": "May 13, 2024",
     "image": "/img/devlog8-menus.png",
@@ -15,9 +33,7 @@
     "imageAlt": "Training Grounds preview",
     "devlogUrl": "../src/news/devlog7.html",
     "devlogTitle": "The Future of Fortress Guardian"
-
   },
-
   {
     "title": "Devlog 6 - Future of enemies",
     "date": "April 24, 2024",
@@ -55,13 +71,13 @@
     "devlogText": ""
   },
   {
-        "title": "Devlog 2 - New Trees",
-        "date": "November 11, 2023",
-        "image": "/img/devlog2-trees.png",
-        "imageAlt": "new trees",
-        "devlogUrl": "../src/news/devlog2.html",
-        "devlogTitle": "Romardia's new forests",
-        "devlogText": ""
+    "title": "Devlog 2 - New Trees",
+    "date": "November 11, 2023",
+    "image": "/img/devlog2-trees.png",
+    "imageAlt": "new trees",
+    "devlogUrl": "../src/news/devlog2.html",
+    "devlogTitle": "Romardia's new forests",
+    "devlogText": ""
   },
   {
     "title": "Devlog 1 - map improvements",

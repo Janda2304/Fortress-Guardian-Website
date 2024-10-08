@@ -6,7 +6,7 @@
 }
 :root
 {
-    --primary-color-100: rgba(60, 60, 60, 1);
+    --primary-color-100: #08090a;
     --primary-color-90: rgba(60, 60, 60, 0.9);
     --primary-color-80: rgba(60, 60, 60, 0.8);
     --primary-color-70: rgba(60, 60, 60, 0.7);
@@ -18,7 +18,7 @@
     --primary-color-10: rgba(60, 60, 60, 0.1);
     --primary-color-5: rgba(60, 60, 60, 0.05);
 
-    --secondary-color-100: #087e8b;
+    --secondary-color-100: #a7a2a9;
     --secondary-color-90: rgba(8, 126, 139, 0.9);
     --secondary-color-80: rgba(8, 126, 139, 0.8);
     --secondary-color-70: rgba(8, 126, 139, 0.7);
@@ -144,7 +144,7 @@
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    text-wrap: none;
+    text-wrap: nowrap;
     width: auto;
     color: var(--text-color);
     font-size: 2rem;
@@ -218,20 +218,25 @@
 
 .footer-container
 {
-    position: relative;
     display: flex;
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-color-100);
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
     flex-direction: column;
     align-self: flex-end;
     margin-top: 3%;
-    width: 100%;
-    background-color: var(--primary-color-100);
 }
 
 .footer-credits
 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
     margin-bottom: .5%;
-    margin-left: .5%;
-    width: 40%;
+    margin-left: 2.5%;
+    width: 60%;
 }
 
 .footer-back-to-top {
@@ -239,8 +244,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: .5%;
-    padding-right: .5%;
+    padding-top: 1%;
+    padding-right: 1%;
     height: 3vh;
     color: var(--snow-100);
     font-size: 1.5rem;
@@ -271,18 +276,20 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     color: var(--snow-100);
     text-decoration: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 15vw;
+    width: 50%;
+    align-self: center;
     height: 75%;
     margin-left: 2.5%;
     margin-top: .5%;
     row-gap: 1%;
     column-gap: 1%;
-    border-bottom: 0.15vw solid var(--secondary-color-100);
+    border-bottom: 0.1vw solid var(--secondary-color-100);
 }
 
 .footer-links-container :last-child
@@ -307,7 +314,7 @@
 .footer-links-container a:hover
 {
     color: rgb(171, 146, 191);
-    background-color: var(--snow-10);
+   /* background-color: var(--snow-10);*/
 }
 
 
@@ -321,6 +328,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    align-self: center;
     width: 15%;
     height: 10%;
     row-gap: 1%;
@@ -382,10 +390,9 @@
     display: none;
     cursor: pointer;
     z-index: 5000;
-    padding: 1vw 1vw 1vw 1.5vw;
     font-size: 2rem;
     position: absolute;
-    right: 0;
+    right: 3%;
 }
 
 
