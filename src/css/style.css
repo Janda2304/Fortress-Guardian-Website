@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Vinque';
-    src: url('../fonts/vinque rg.otf') format('opentype');
+    font-family: 'Grandstander';
+    src: url('../fonts/Grandstander-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -144,7 +144,7 @@
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    text-wrap: nowrap;
+    text-wrap: none;
     width: auto;
     color: var(--text-color);
     font-size: 2rem;
@@ -197,7 +197,7 @@
     background-color: var(--button-color);
     border: 0.2vw solid var(--snow-100);
     height: auto;
-    font-family: Vinque, Roboto, serif;
+    font-family: Grandstander, Vinque, Roboto, serif;
     border-radius: 0.5vw;
     font-size: 1.6rem;
     padding: 0 0.5rem;
@@ -256,7 +256,7 @@
     content: "Back to Top";
     font-size: 1rem;
     text-align: center;
-    font-family: Vinque, Roboto, serif;
+    font-family: Grandstander, Vinque, Roboto, serif;
     position: absolute;
     top: 100%;
     right: 5px;
@@ -339,7 +339,7 @@
 .secondary-footer-links-container a
 {
     color: var(--snow-100);
-    font-family: Vinque, Roboto, serif;
+    font-family: Grandstander, Vinque, Roboto, serif;
     text-decoration: none;
     font-size: 1.25rem;
     padding: 0.25rem 0;
