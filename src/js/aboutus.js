@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function()
    let accelerusButton = document.getElementById('accelerus-button');
    let askisButton = document.getElementById('askis-button');
    let underglowButton = document.getElementById('underglow-button');
+    let underglowItchButton = document.getElementById('underglow-itch-button');
    let fgButton = document.getElementById('fg-button');
 
 
@@ -17,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function()
     });
 
     underglowButton.addEventListener('click', function()
+    {
+        window.location.href = "underglow.html";
+    });
+
+    underglowItchButton.addEventListener('click', function()
     {
          window.location.href = "https://turtledave501.itch.io/underglow";
     });

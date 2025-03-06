@@ -7,7 +7,7 @@ body
     min-width: 100%;
     min-height: 100vh;
     font-family: Grandstander, Vinque, Roboto, serif;
-    background-image: url("../img/homepage-background.png");
+    background-image: url("../../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);

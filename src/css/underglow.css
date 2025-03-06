@@ -1,0 +1,91 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: Grandstander, Vinque, Roboto, serif;
+    background-image: url("../../img/underglow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container
+{
+    display: flex;
+    margin-top: 2.5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-color-50);
+    width: 60%;
+    text-align: center;
+    height: 50%;
+    border-radius: 1vw;
+    padding-bottom: 0.5rem;
+}
+
+.title
+{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary-color-100);
+}
+
+.text
+{
+    padding: 1.5%;
+    font-size: 1.1rem;
+    color: var(--snow-100);
+}
+
+b
+{
+    font-weight: 800;
+}
+
+.text-container a
+{
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 100%;
+    font-family: Grandstander, Vinque, Roboto, serif;
+    background-color: var(--button-color);
+    border: 0.15vw solid snow;
+    border-radius: 0.5vw;
+    font-size: 1.5rem;
+    padding: .25rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.text-container a:hover
+{
+    background-color: var(--button-hover-color);
+    border: 0.15vw solid #e5e0e0;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+
+@media  (max-width: 768px)
+{
+    .text-container
+    {
+        width: 90%;
+        margin-top: 5vh;
+        border-radius: 3vw;
+    }
+
+    .text-container a
+    {
+        width: 50vw;
+        border: 0.25vw solid snow;
+        border-radius: 1.5vw;
+    }
+}

@@ -8,7 +8,7 @@ body
     min-height: 100vh;
     gap: 5%;
     font-family: Grandstander, Vinque, Roboto, serif;
-    background-image: url("../img/homepage-background.png");
+    background-image: url("../../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@ body
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 8vh;
     padding-bottom: .5%;
     padding-top: .5%;
     border-bottom-left-radius: 1vw;
@@ -139,6 +139,23 @@ body
     color: var(--secondary-color-100);
 }
 
+.all-button
+{
+    padding: .5vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-decoration: none;
+    font-size: 3rem;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: black 0 0 0.1vw;
+    border-radius: 0.4vw;
+    color: var(--quaternary-color-100);
+    margin-top: 2.5vh;
+}
+
 .news-text
 {
     display: flex;
@@ -153,13 +170,11 @@ body
     .main-news-container
     {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .news-container
     {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -189,7 +204,6 @@ body
     .main-news-container
     {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .text-container
@@ -227,6 +241,15 @@ body
 
 }
 
+@media screen and (max-width: 660px)
+{
+    .news-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+}
 
 /*BREAKPOINT_3*/
 @media screen and (max-width: 576px)
@@ -234,18 +257,14 @@ body
     .main-news-container
     {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
         margin-bottom: 5%;
     }
 
-    .news-container
+    .all-button
     {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 5%;
-        margin-bottom: 50%;
-        gap: 2%;
+        border-radius: 2.5vw;
     }
+
 
 
     .main-news-item

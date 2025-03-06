@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Grandstander';
-    src: url('../fonts/Grandstander-VariableFont_wght.ttf') format('truetype');
+    src: url('../../fonts/Grandstander-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -548,6 +548,7 @@
     .navigation a
     {
         font-size: 1.3rem;
+        border-radius: 1vw;
         padding: 0.1rem 0.5rem;
     }
 }
@@ -582,7 +583,7 @@
 @font-face
 {
     font-family: Vinque;
-    src: url("../fonts/vinque rg.otf");
+    src: url("../../fonts/vinque rg.otf");
 }
 
 

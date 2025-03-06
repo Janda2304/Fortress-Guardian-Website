@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded', function()
 {
     document.getElementById('other-games-button').addEventListener('click', function()
     {
-        window.location.href = "src/aboutus.html";
+        window.location.href = "../aboutus.html";
     });
 
     document.getElementById('learn-more-button').addEventListener('click', function()
     {
-        window.location.href = "src/about-game.html";
+        window.location.href = "../about-game.html";
     });
 
     document.getElementById('play-now-button-trailer').addEventListener('click', function()
     {
-        window.location.href = "src/about-game.html";
+        window.location.href = "../about-game.html";
     });
 
 

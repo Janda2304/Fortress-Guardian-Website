@@ -8,7 +8,7 @@ body
     min-width: 100%;
     min-height: 100vh;
     font-family: Grandstander, Vinque, Roboto, serif;
-    background-image: url("../img/devlog7-future.png");
+    background-image: url("../../img/devlog7-future.png");
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(0.15rem);
@@ -50,7 +50,7 @@ img
 {
     padding: 1.5%;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--snow-50);
 }
 
 .title
@@ -70,4 +70,22 @@ img
 b
 {
     font-weight: 800;
+}
+
+@media screen and (max-width: 768px)
+{
+    .text-container
+    {
+        margin-top: 5%;
+        border-radius: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .text-container
+    {
+        margin-top: 7%;
+        border-radius: 2vw;
+    }
 }

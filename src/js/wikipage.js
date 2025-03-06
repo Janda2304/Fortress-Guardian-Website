@@ -1,42 +1,46 @@
-#ifndef UNIVERSAL_LIT_GBUFFER_PASS_INCLUDED
-#define UNIVERSAL_LIT_GBUFFER_PASS_INCLUDED
+document.addEventListener('DOMContentLoaded', function() {
+    let search = document.getElementById('wiki-search');
+    let searchTerm = '';
 
-#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/UnityGBuffer.hlsl"
-#if defined(LOD_FADE_CROSSFADE)
-    #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/LODCrossFade.hlsl"
-#endif
+    let searchButton = document.getElementById('wiki-search-button');
+    let categoryButtons = document.getElementsByClassName('category');
 
-// TODO: Currently we support viewDirTS caclulated in vertex shader and in fragments shader.
-// As both solutions have their advantages and disadvantages (etc. shader target 2.0 has only 8 interpolators).
-// We need to find out if we can stick to one solution, which we needs testing.
-// So keeping this until I get manaul QA pass.
-#if defined(_PARALLAXMAP) && (SHADER_TARGET >= 30)
-#define REQUIRES_TANGENT_SPACE_VIEW_DIR_INTERPOLATOR
-#endif
+    Array.from(categoryButtons).forEach((button) =>
+    {
+        button.href = 'wiki/no-result.html?search=' + button.textContent;
+    });
 
-#if (defined(_NORMALMAP) || (defined(_PARALLAXMAP) && !defined(REQUIRES_TANGENT_SPACE_VIEW_DIR_INTERPOLATOR))) || defined(_DETAIL)
-#define REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR
-#endif
 
-// keep this file in sync with LitForwardPass.hlsl
 
-struct Attributes
-{
-    float4 positionOS   : POSITION;
-    float3 normalOS     : NORMAL;
-    float4 tangentOS    : TANGENT;
-    float2 texcoord     : TEXCOORD0;
-    float2 staticLightmapUV   : TEXCOORD1;
-    float2 dynamicLightmapUV  : TEXCOORD2;
-    UNITY_VERTEX_INPUT_INSTANCE_ID
-};
+    // Function to handle search
+    function handleSearch() {
+        searchTerm = search.value.trim().toLowerCase();
 
-struct Varyings
-{
-    float2 uv                       : TEXCOORD0;
+        if (searchTerm.includes('goblin') || searchTerm.includes('Goblin'))
+        {
+            window.location.href = '../wiki/red-goblin.html';
+        }
+        else if (searchTerm.includes('bear') || searchTerm.includes('Bear'))
+        {
+            window.location.href = '../wiki/bear.html';
+        }
+        else if (searchTerm.includes('training') || searchTerm.includes('Training') || searchTerm.includes('grounds') || searchTerm.includes('Grounds'))
+        {
+            window.location.href = '../wiki/training-grounds.html';
+        }
+        else
+        {
+            window.location.href = 'wiki/no-result.html?search=' + searchTerm;
+        }
+    }
 
-#if defined(REQUIRES_WORLD_SPACE_POS_INTERPOLATOR)
-    float3 positionWS               : TEXCOORD1;
-#endif
+    // Event listener for search button click
+    searchButton.addEventListener('click', handleSearch);
 
+    // Event listener for Enter key press
+    search.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    });
+});

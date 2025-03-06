@@ -23,7 +23,7 @@ body
     min-width: 100%;
     min-height: 100vh;
     font-family: Grandstander, Vinque, Roboto, serif;
-    background-image: url("../img/homepage-background.png");
+    background-image: url("../../img/homepage-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     gap: 1vh;
@@ -66,7 +66,7 @@ body
     justify-content: center;
     align-items: center;
     width: 18%;
-    font-family: Vinque, Roboto, serif;
+    font-family: Grandstander, Vinque, Roboto, serif;
     background-color: var(--button-color);
     border: 0.2vw solid snow;
     border-radius: 0.5vw;
