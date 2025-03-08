@@ -25,36 +25,29 @@ body
 .search-bar
 {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    background-color: var(--tertiary-color-50);
-    border: 0.15vw solid var(--quaternary-color-100);
-    border-radius: 0.25vw;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 5%;
 
 }
 
-.search-bar :nth-child(2)
+.search-bar i
 {
     right: 0;
     position: absolute;
     color: var(--snow-100);
     font-size: 1.1rem;
     margin-right: .5%;
+    margin-top: .5%;
 }
 
 .search-bar input
 {
-    width: 100%;
-    height: 100%;
+
+    border-radius: .25vw;
+    width: 50vw;
+    height: 3vh;
     background-color: var(--tertiary-color-50);
     border: none;
     font-size: 1.1rem;
-    font-family: Vinque, Roboto, serif;
+    font-family: Grandstander, Vinque, Roboto, serif;
     font-weight: 600;
 }
 
@@ -112,6 +105,21 @@ body
 .category:hover
 {
     background-color: var(--tertiary-color-60);
+}
+
+.search-results
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    border-radius: 0.25vw;
+    background-color: var(--tertiary-color-50);
 }
 
 @media screen and (max-width: 768px)

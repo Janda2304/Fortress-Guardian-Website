@@ -1,46 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
     let search = document.getElementById('wiki-search');
-    let searchTerm = '';
-
     let searchButton = document.getElementById('wiki-search-button');
     let categoryButtons = document.getElementsByClassName('category');
+    let resultsContainer = document.createElement('div');
+    resultsContainer.id = 'search-results';
+    resultsContainer.classList.add('search-results');
+    document.querySelector('.search-bar').appendChild(resultsContainer);
 
-    Array.from(categoryButtons).forEach((button) =>
-    {
+    const wikiData = [
+        { name: 'Red Goblin', url: 'wiki/red-goblin.html' },
+        { name: 'Bear', url: 'wiki/bear.html' },
+        { name: 'Training Grounds', url: 'wiki/training-grounds.html' },
+    ];
+
+    Array.from(categoryButtons).forEach((button) => {
         button.href = 'wiki/no-result.html?search=' + button.textContent;
     });
 
-
-
-    // Function to handle search
     function handleSearch() {
-        searchTerm = search.value.trim().toLowerCase();
+        let searchTerm = search.value.trim().toLowerCase();
+        resultsContainer.innerHTML = '';
 
-        if (searchTerm.includes('goblin') || searchTerm.includes('Goblin'))
-        {
-            window.location.href = '../wiki/red-goblin.html';
+        if (searchTerm === '') {
+            resultsContainer.innerHTML = '<p></p>';
+            return;
         }
-        else if (searchTerm.includes('bear') || searchTerm.includes('Bear'))
-        {
-            window.location.href = '../wiki/bear.html';
-        }
-        else if (searchTerm.includes('training') || searchTerm.includes('Training') || searchTerm.includes('grounds') || searchTerm.includes('Grounds'))
-        {
-            window.location.href = '../wiki/training-grounds.html';
-        }
-        else
-        {
-            window.location.href = 'wiki/no-result.html?search=' + searchTerm;
+
+        let filteredResults = wikiData.filter(entry => entry.name.toLowerCase().includes(searchTerm));
+
+        if (filteredResults.length > 0) {
+            filteredResults.forEach(result => {
+                let resultItem = document.createElement('a');
+                resultItem.href = result.url;
+                resultItem.textContent = result.name;
+                resultItem.classList.add('search-result-item');
+                resultsContainer.appendChild(resultItem);
+            });
+        } else {
+            resultsContainer.innerHTML = `<p>No results found for "${searchTerm}".</p>`;
         }
     }
 
-    // Event listener for search button click
-    searchButton.addEventListener('click', handleSearch);
-
-    // Event listener for Enter key press
-    search.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            handleSearch();
-        }
-    });
+    search.addEventListener('input', handleSearch);
 });
