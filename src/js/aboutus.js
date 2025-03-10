@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function()
     let accelerusItchButton = document.getElementById('accelerus-itch-button');
     let askisItchButton = document.getElementById('askis-itch-button');
    let fgButton = document.getElementById('fg-button');
+   let fgDownloadButton = document.getElementById('fg-download-button');
 
 
    if (accelerusButton !== null)
@@ -74,4 +75,11 @@ document.addEventListener('DOMContentLoaded', function()
         });
     }
 
+    if (fgDownloadButton !== null)
+    {
+        fgDownloadButton.addEventListener('click', function()
+        {
+            window.location.href = "https://github.com/Janda2304/Fortress-Guardian/releases/tag/0.19.0";
+        });
+    }
 });

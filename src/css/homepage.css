@@ -70,8 +70,8 @@ body
     background-color: var(--button-color);
     border: 0.2vw solid snow;
     border-radius: 0.5vw;
-    font-size: 1.5rem;
-    height: 65%;
+    font-size: 1.4rem;
+    height: 70%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -109,6 +109,8 @@ video
     {
         font-size: 1.1rem;
         width: 25%;
+        border: 0.3vw solid snow;
+        border-radius: 0.75vw;
     }
 }
 
@@ -143,5 +145,7 @@ video
         font-size: 0.9rem;
         width: 30%;
         height: 55%;
+        border: 0.4vw solid snow;
+        border-radius: 1vw;
     }
 }

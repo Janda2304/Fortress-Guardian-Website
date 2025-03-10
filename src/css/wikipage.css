@@ -127,5 +127,22 @@ body
     .wiki-content
     {
         width: 80%;
+        border-radius: 1vw;
+    }
+
+    .search-results
+    {
+        border-radius: 1vw;
+    }
+
+    .search-bar
+    {
+        margin-top: 2vh;
+    }
+
+    .search-bar input
+    {
+        border-radius: 1vw;
+        width: auto;
     }
 }

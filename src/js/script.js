@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('navigation').getElementsByClassName('play-button-container')[0].getElementsByClassName('button')[0].addEventListener('click', function()
     {
-        window.location.href = "../about-game.html";
+        window.location.href = "./about-game.html";
     });
 
     screenWidth.addEventListener("change", resetStyling);

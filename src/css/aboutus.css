@@ -160,15 +160,45 @@ b
         border-radius: 1vw;
         border: 0.3vw solid snow;
     }
+
+    .games-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+
+    .games-container button
+    {
+        width: 80%;
+        border-radius: 1.5vw;
+        border: 0.3vw solid snow;
+    }
+
 }
 
 @media screen and (max-width: 576px)
 {
-
+    .text-container
+    {
+        margin-top: 5vh;
+        border-radius: 2.5vw;
+    }
 
     .fortress-button-container button
     {
         width: 75%;
+        border-radius: 2vw;
+        border: 0.5vw solid snow;
+    }
+
+    .games-container button
+    {
+        width: 80%;
+        border-radius: 2vw;
+        border: 0.5vw solid snow;
     }
 }
 
