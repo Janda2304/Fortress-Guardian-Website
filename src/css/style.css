@@ -226,6 +226,7 @@
     border-top-right-radius: 2vw;
     flex-direction: column;
     align-self: flex-end;
+    bottom: 0;
     margin-top: 3%;
 }
 

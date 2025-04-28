@@ -20,6 +20,7 @@ body
     align-items: center;
     width: 100%;
     margin-top: 2.5%;
+    min-height: 50vh;
 }
 
 .search-bar
@@ -120,6 +121,14 @@ body
     margin-bottom: 5%;
     border-radius: 0.25vw;
     background-color: var(--tertiary-color-50);
+}
+
+.wiki-image
+{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px)
